@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "Load test tools"
+exit 0

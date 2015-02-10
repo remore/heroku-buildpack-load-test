@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# move to build dir
+cd $1
+
+echo "-----> Installing Apache JMeter 2.16"
+curl -L -s https://raw.githubusercontent.com/remore/loadtest-binaries/master/apache-jmeter-2.16-bin.tar.gz
+mkdir -p vendor/apache-jmeter
+tar -C vendor/apache-jmeter -xvf apache-jmeter-2.16-bin.tar.gz
+
+echo "-----> Installing Siege 3.0.9"
+curl -L -s https://raw.githubusercontent.com/remore/loadtest-binaries/master/siege-3.0.9-bin.tar.gz
+mkdir -p vendor/siege
+tar -C vendor/siege -xvf siege-3.0.9-bin.tar.gz
+
+echo "-----&gt; Installing httperf 0.9.0"
+curl -L -s https://raw.githubusercontent.com/remore/loadtest-binaries/master/httperf-0.9.0-bin.tar.gz
+mkdir -p vendor/httperf
+tar -C vendor/httperf -xvf httperf-0.9.0-bin.tar.gz
+

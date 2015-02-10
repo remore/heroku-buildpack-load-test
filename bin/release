@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cat <<EOF
+---
+config_vars:
+  PATH: $PATH:/app/vendor/httperf:/app/vendor/siege:/app/vendor/apache-jmeter/bin
+EOF
