@@ -2,7 +2,7 @@
 Heroku buildpack contains load test tools such as JMeter, siege, httperf
 
 ## Usage
-```bash
+```
 $ heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 
 $ cat .buildpacks
