@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # move to build dir
 cd $1
